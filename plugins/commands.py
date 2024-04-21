@@ -1544,9 +1544,9 @@ async def check_plans_cmd(client, message):
         [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟑", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03")],
         [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟒", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_04")],
         [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
-        ]
-        reply_markup = InlineKeyboardMarkup(btn)
-        await message.reply_photo(
-        photo=GROUP_PIC,
-        caption=GROUP_TEXT,
-        reply_markup=reply_markup
+    ]
+    reply_markup = InlineKeyboardMarkup(btn)
+    await message.reply_photo(
+    photo=GROUP_PIC,
+    caption=GROUP_TEXT,
+    reply_markup=reply_markup
