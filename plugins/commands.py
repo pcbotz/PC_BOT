@@ -1551,7 +1551,7 @@ async def plans_cmd_handler(client, message):
         reply_markup=reply_markup
     )
         
-@Client.on_message(filters.command("myplan"))
+@Client.on_message(filters.command("group"))
 async def check_plans_cmd(client, message):
     if PREMIUM_AND_REFERAL_MODE == False:
         return 
