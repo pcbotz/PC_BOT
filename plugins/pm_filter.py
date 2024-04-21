@@ -162,7 +162,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton('𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
         btn.insert(0, [
@@ -179,11 +179,11 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+            InlineKeyboardButton("🌍 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 🎯", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg=="),
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
     try:
@@ -297,7 +297,7 @@ async def advantage_spoll_choker(bot, query):
                 if NO_RESULTS_MSG:
                     await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
                 k = await query.message.edit(script.MVE_NT_FND)
-                await asyncio.sleep(10)
+                await asyncio.sleep(300)
                 await k.delete()
 
 # Episode
@@ -399,11 +399,11 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+            InlineKeyboardButton("🌍 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 🎯", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg=="),
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
     else:
@@ -416,12 +416,12 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
 
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+            InlineKeyboardButton("🌍 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 🎯", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg=="),
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
 
@@ -565,11 +565,11 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+            InlineKeyboardButton("🌍 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 🎯", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg=="),
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
     else:
@@ -582,11 +582,11 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+            InlineKeyboardButton("🌍 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 🎯", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg=="),
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
 
@@ -765,11 +765,11 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+            InlineKeyboardButton("🌍 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 🎯", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg=="),
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
         
@@ -919,7 +919,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 ]
             )
             btn.insert(0, [
-                InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+                InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
             ])
 
@@ -932,7 +932,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 ]
             )
             btn.insert(0, [
-                InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+                InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
             ])
                 
@@ -946,7 +946,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
 
@@ -2651,11 +2651,11 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+            InlineKeyboardButton("🌍 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 🎯", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg=="),
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
     else:
@@ -2668,11 +2668,11 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("sᴇʟᴇᴄᴛ 👉", callback_data="select"),
+            InlineKeyboardButton('𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url=f'https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS'),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
         ])
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
+            InlineKeyboardButton("🌍 𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 🎯", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg=="),
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
     if offset != "":
