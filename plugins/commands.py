@@ -1462,7 +1462,7 @@ async def fsub(client, message):
     await save_group_settings(grpid, 'fsub', fsub_ids)
     await message.reply_text(f"<b>Successfully set force channels for {title} to\n\n{channels}\n\nYou can remove it by /nofsub.</b>")
         
-@Client.on_message(filters.command("Group"))
+@Client.on_message(filters.command("group"))
 async def plans_cmd_handler(client, message): 
     if PREMIUM_AND_REFERAL_MODE == False:
         return 
