@@ -311,6 +311,7 @@ async def start(client, message):
                            ]
                         ]
                      )
+                )
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
@@ -519,6 +520,7 @@ async def start(client, message):
                            ]
                         ]
                 )
+            )
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
@@ -606,6 +608,7 @@ async def start(client, message):
                            ]
                         ]
                 )
+            )
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
@@ -692,6 +695,7 @@ async def start(client, message):
                            ]
                         ]
         )
+    )
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
