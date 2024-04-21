@@ -1547,8 +1547,8 @@ async def plans_cmd_handler(client, message):
     ]
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
-        photo=PAYMENT_QR,
-        caption=PAYMENT_TEXT,
+        photo=GROUP_PIC,
+        caption=GROUP_TEXT,
         reply_markup=reply_markup
     )
     
