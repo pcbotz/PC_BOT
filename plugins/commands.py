@@ -1544,8 +1544,10 @@ async def check_plans_cmd(client, message):
         await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
     else:
         btn = [            
-            [InlineKeyboardButton("𝐀𝐃𝐌𝐈𝐍 𝟎𝟏", url=f"https://t.me/Ramanan1_bot")],
-            [InlineKeyboardButton("𝐀𝐃𝐌𝐈𝐍 𝟎𝟐", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES_02_bot")],            
+            [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟏", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES")],
+            [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟐", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_02")],
+            [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟑", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03")],
+            [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟒", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_04")],
             [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
