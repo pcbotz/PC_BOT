@@ -1547,7 +1547,7 @@ async def plans_cmd_handler(client, message):
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
         photo="https://telegra.ph/file/1e9f0748931102b81caa3.jpg",
-        caption=**പുതിയതും പഴയതുമായ എല്ലാ മൂവിയും ലഭിക്കാൻ തഴെ ഉള്ള ലിങ്കിൽ കയറി സ്പെല്ലിംങ്ങ് തെറ്റാതെ മെസ്സേജ് അയക്കുക..!!!**,
+        caption="**പുതിയതും പഴയതുമായ എല്ലാ മൂവിയും ലഭിക്കാൻ തഴെ ഉള്ള ലിങ്കിൽ കയറി സ്പെല്ലിംങ്ങ് തെറ്റാതെ മെസ്സേജ് അയക്കുക..!!!**",
         reply_markup=reply_markup
     )
     
