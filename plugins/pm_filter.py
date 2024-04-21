@@ -443,7 +443,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
             )
     else:
         btn.append(
-            [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
+            [InlineKeyboardButton(text="🎬 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎬", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03")]
         )
     
     if not settings["button"]:
@@ -608,7 +608,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             )
     else:
         btn.append(
-            [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
+            [InlineKeyboardButton(text="🎬 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎬", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03")]
         )
     
     if not settings["button"]:
@@ -2693,7 +2693,7 @@ async def auto_filter(client, msg, spoll=False):
             )
     else:
         btn.append(
-            [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
+            [InlineKeyboardButton(text="🎬 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎬", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
@@ -2755,11 +2755,19 @@ async def auto_filter(client, msg, spoll=False):
                     await asyncio.sleep(300)
                     await hehe.delete()
                     await message.delete()
+                    fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                    await asyncio.sleep(100)
+                    await fcu.delete()
+                    await message.delete()    
             except KeyError:
                 await save_group_settings(message.chat.id, 'auto_delete', True)
                 await asyncio.sleep(300)
                 await hehe.delete()
                 await message.delete()
+                fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                await asyncio.sleep(100)
+                await fcu.delete()
+                await message.delete()    
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg") 
@@ -2771,38 +2779,58 @@ async def auto_filter(client, msg, spoll=False):
                     m=await message.reply_text("🔎")
                     await hmm.delete()
                     await message.delete()
+                    fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                    await asyncio.sleep(100)
+                    await fcu.delete()
+                    await message.delete()    
             except KeyError:
                 await save_group_settings(message.chat.id, 'auto_delete', True)
                 await asyncio.sleep(300)
                 await hmm.delete()
                 await message.delete()
+                fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                await asyncio.sleep(100)
+                await fcu.delete()
+                await message.delete()    
         except Exception as e:
             logger.exception(e)
             m=await message.reply_text("🔎") 
-            fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await m.delete()
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(300)
                     await fek.delete()
+                    fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                    await asyncio.sleep(100)
+                    await fcu.delete()
                     await message.delete()
             except KeyError:
                 await save_group_settings(message.chat.id, 'auto_delete', True)
                 await asyncio.sleep(300)
                 await fek.delete()
+                fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                await asyncio.sleep(100)
+                await fcu.delete()
                 await message.delete()
     else:
-        fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
+        fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await m.delete()
         try:
             if settings['auto_delete']:
                 await asyncio.sleep(300)
                 await fuk.delete()
+                fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                await asyncio.sleep(100)
+                await fcu.delete()
                 await message.delete()
         except KeyError:
             await save_group_settings(message.chat.id, 'auto_delete', True)
             await asyncio.sleep(300)
             await fuk.delete()
+            fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+            await asyncio.sleep(100)
+            await fcu.delete()
             await message.delete()
 
 
@@ -2838,7 +2866,7 @@ async def advantage_spell_chok(client, msg):
                 caption=script.I_CUDNT.format(mv_rqst),
                 reply_markup=InlineKeyboardMarkup(button)
             )
-            await asyncio.sleep(30)
+            await asyncio.sleep(300)
             await k.delete()
             return
         regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -2876,7 +2904,7 @@ async def advantage_spell_chok(client, msg):
                 caption=script.I_CUDNT.format(mv_rqst),
                 reply_markup=InlineKeyboardMarkup(button)
             )
-            await asyncio.sleep(30)
+            await asyncio.sleep(300)
             await k.delete()
             return
         SPELL_CHECK[mv_id] = movielist
@@ -2894,7 +2922,7 @@ async def advantage_spell_chok(client, msg):
         )
         try:
             if settings['auto_delete']:
-                await asyncio.sleep(60)
+                await asyncio.sleep(300)
                 await spell_check_del.delete()
         except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
@@ -2919,7 +2947,7 @@ async def advantage_spell_chok(client, msg):
                 caption=script.I_CUDNT.format(mv_rqst),
                 reply_markup=InlineKeyboardMarkup(button)
             )
-            await asyncio.sleep(30)
+            await asyncio.sleep(300)
             await k.delete()
             return
         movielist = []
@@ -2935,7 +2963,7 @@ async def advantage_spell_chok(client, msg):
                 caption=script.I_CUDNT.format(mv_rqst),
                 reply_markup=InlineKeyboardMarkup(button)
             )
-            await asyncio.sleep(30)
+            await asyncio.sleep(300)
             await k.delete()
             return
         movielist += [movie.get('title') for movie in movies]
