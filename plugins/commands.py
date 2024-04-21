@@ -1574,3 +1574,25 @@ async def check_plans_cmd(client, message):
         caption="**👉 𝗟𝗔𝗧𝗘𝗦𝗧 𝗠𝗔𝗟𝗔𝗬𝗔𝗟𝗔𝗠 𝗧𝗔𝗠𝗜𝗟 𝗘𝗡𝗚𝗟𝗜𝗦𝗛 𝗧𝗘𝗟𝗨𝗚𝗨 𝗞𝗔𝗡𝗡𝗔𝗗𝗔 𝗛𝗜𝗡𝗗𝗜 𝗠𝗢𝗩𝗜𝗘𝗦 ✌️\n\nപുതിയതും പഴയതുമായ എല്ലാ മൂവിയും ലഭിക്കാൻ തഴെ ഉള്ള ലിങ്കിൽ കയറി സ്പെല്ലിംങ്ങ് തെറ്റാതെ മെസ്സേജ് അയക്കുക..!!!\n\n🔰 𝗚𝗥𝗢𝗨𝗣  𝗝 𝗢 𝗜 𝗡 ❤️ 𝗡 𝗢 𝗪 .🔥  𝗟𝗜𝗡𝗞  👇**",
         reply_markup=reply_markup
         )
+        
+@Client.on_message(filters.command("admins"))
+async def check_plans_cmd(client, message):
+    if PREMIUM_AND_REFERAL_MODE == False:
+        return 
+    user_id  = message.from_user.id
+    if await db.has_premium_access(user_id):         
+        remaining_time = await db.check_remaining_uasge(user_id)             
+        expiry_time = remaining_time + datetime.datetime.now()
+        await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
+    else:
+        btn = [            
+            [InlineKeyboardButton("𝐀𝐃𝐌𝐈𝐍 𝟎𝟏", url=f"https://t.me/Ramanan1_bot")],
+            [InlineKeyboardButton("𝐀𝐃𝐌𝐈𝐍 𝟎𝟐", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES_02_bot")],            
+            [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+        ]
+        reply_markup = InlineKeyboardMarkup(btn)
+        await message.reply_photo(
+        photo="https://telegra.ph/file/1e9f0748931102b81caa3.jpg",
+        caption="**⚠️ OWNERS & ADMINS 😌\n\nɢʀᴏᴜᴩ : 👇\nCINEMA LOKAM\n\nʙᴏᴛꜱ : 👇\nRAMANAN\n\n♻️Owner & Admin:- @Ramanan1_bot\n\nɢʀᴏᴜᴩ : 👇\nഅറക്കൽ തറവാട് മൂവീസ് \n\nʙᴏᴛꜱ : 👇\nHoney Rose\nMamitha Baiju\nAishwarya Lekshmi\n\nNikhila Vimal\nSaniya Iyappan\nRashmika Mandanna\nPriyanka Mohan\nKeerthy Suresh\nPooja Hegde\nVaishnavi chaitanya\nNatasha doshi\n\n♻️ Owner & Admin:- @ARAKAL_THERAVAD_MOVIES_02_bot**",
+        reply_markup=reply_markup
+        )
