@@ -1533,7 +1533,25 @@ async def plans_cmd_handler(client, message):
         caption=PAYMENT_TEXT,
         reply_markup=reply_markup
     )
-        
+    
+  @Client.on_message(filters.command("group"))
+async def plans_cmd_handler(client, message): 
+    if PREMIUM_AND_REFERAL_MODE == False:
+        return 
+    btn = [            
+        [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟏", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES")],
+        [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟐", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_02")],
+        [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟑", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03")],
+        [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟒", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_04")],
+        [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+    ]
+    reply_markup = InlineKeyboardMarkup(btn)
+    await message.reply_photo(
+        photo=PAYMENT_QR,
+        caption=PAYMENT_TEXT,
+        reply_markup=reply_markup
+    )
+    
 @Client.on_message(filters.command("myplan"))
 async def check_plans_cmd(client, message):
     if PREMIUM_AND_REFERAL_MODE == False:
