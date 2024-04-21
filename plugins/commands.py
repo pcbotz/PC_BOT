@@ -1550,3 +1550,4 @@ async def check_plans_cmd(client, message):
     photo=GROUP_PIC,
     caption=GROUP_TEXT,
     reply_markup=reply_markup
+    )
