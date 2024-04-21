@@ -1534,18 +1534,23 @@ async def plans_cmd_handler(client, message):
     )
         
 @Client.on_message(filters.command("group"))
-async def check_plans_cmd(client, message):
+async def plans_cmd_handler(client, message): 
+    if PREMIUM_AND_REFERAL_MODE == False:
+        return 
+    btn = [            
+        [InlineKeyboardButton("𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐕𝟏", url=f"https://t.me/+K5ot-a5A_Dc3ZTQ1")],
+        [InlineKeyboardButton("𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐕𝟐", url=f"https://t.me/+_3l54jdOxkI2MGFl")],
+        [InlineKeyboardButton("𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐕𝟑", url=f"https://t.me/+As9mRmr98lc5YzA9")],
+        [InlineKeyboardButton("𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐕𝟒", url=f"https://t.me/+n0OmVfb-25ZkNGU9")],
+        [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+    ]
+    reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
-    photo="https://telegra.ph/file/2e719fb07a32ef4221b35.jpg",
-    caption="**👉 𝗟𝗔𝗧𝗘𝗦𝗧 𝗠𝗔𝗟𝗔𝗬𝗔𝗟𝗔𝗠 𝗧𝗔𝗠𝗜𝗟 𝗘𝗡𝗚𝗟𝗜𝗦𝗛 𝗧𝗘𝗟𝗨𝗚𝗨 𝗞𝗔𝗡𝗡𝗔𝗗𝗔 𝗛𝗜𝗡𝗗𝗜 𝗠𝗢𝗩𝗜𝗘𝗦 ✌️\n\nപുതിയതും പഴയതുമായ എല്ലാ മൂവിയും ലഭിക്കാൻ തഴെ ഉള്ള ലിങ്കിൽ കയറി സ്പെല്ലിംങ്ങ് തെറ്റാതെ മെസ്സേജ് അയക്കുക..!!!\n\n🔰 𝗚𝗥𝗢𝗨𝗣  𝗝 𝗢 𝗜 𝗡 ❤️ 𝗡 𝗢 𝗪 .🔥  𝗟𝗜𝗡𝗞  👇**",    
-        reply_markup=InlineKeyboardMarkup(                
-               [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟏", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES")],
-               [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟐", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_02")],
-               [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟑", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03")],
-               [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟒", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_04")],
-               [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]    
-        )
-    )        
+        photo="https://telegra.ph/file/1e9f0748931102b81caa3.jpg",
+        caption=**പുതിയതും പഴയതുമായ എല്ലാ മൂവിയും ലഭിക്കാൻ തഴെ ഉള്ള ലിങ്കിൽ കയറി സ്പെല്ലിംങ്ങ് തെറ്റാതെ മെസ്സേജ് അയക്കുക..!!!**,
+        reply_markup=reply_markup
+    )
+    
 @Client.on_message(filters.command("admins"))
 async def check_plans_cmd(client, message):
     if PREMIUM_AND_REFERAL_MODE == False:
