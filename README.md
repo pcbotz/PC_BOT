@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://graph.org/file/d57d6f83abb6b8d0efb02.jpg" alt="VJ-Filter-Bot Logo">
+  <img src="https://telegra.ph/file/86b50f3a69ce4ef16fb07.jpg" alt="ARAKAL THERAVAD MOVIES">
 </p>
 <h1 align="center">
-  VJ FILTER BOT
+  <a href="https://t.me/ARAKAL_THERAVAD_MOVIES">ARAKAL THERAVAD MOVIES BOTS</a>
 </h1>
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+VJ+Filter+Bot!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+ARAKAL-THERAVAD-MOVIES-BOT;A+SIMPLE+AND+POWERFUL+BOT!;A+BOT+WITH+CUSTOM+URL+SHORTNER;AND+CUSTOM+TUTORIAL!;ALSO+HAVE+STREAM+ONLINE;AND+FAST+DOWNLOAD+FEATURE!;AND+MANY+MORE+FEATURES!)
 </p>
 
 ## Main Feature 
