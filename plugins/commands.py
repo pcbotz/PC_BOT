@@ -1537,11 +1537,11 @@ async def plans_cmd_handler(client, message):
 async def check_plans_cmd(client, message):
     if PREMIUM_AND_REFERAL_MODE == False:
         return 
-    user_id  = message.from_user.id
+    """user_id  = message.from_user.id
     if await db.has_premium_access(user_id):         
         remaining_time = await db.check_remaining_uasge(user_id)             
         expiry_time = remaining_time + datetime.datetime.now()
-        await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
+        await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")"""
     else:
         btn = [            
             [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟏", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES")],
