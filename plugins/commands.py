@@ -1555,7 +1555,10 @@ async def plans_cmd_handler(client, message):
     if PREMIUM_AND_REFERAL_MODE == False:
         return 
     btn = [            
-        [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url=f"https://t.me/{OWNER_USERNAME}")],
+        [InlineKeyboardButton("𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐕𝟏", url=f"https://t.me/+K5ot-a5A_Dc3ZTQ1")],
+        [InlineKeyboardButton("𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐕𝟐", url=f"https://t.me/+_3l54jdOxkI2MGFl")],
+        [InlineKeyboardButton("𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐕𝟑", url=f"https://t.me/+As9mRmr98lc5YzA9")],
+        [InlineKeyboardButton("𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐕𝟒", url=f"https://t.me/+n0OmVfb-25ZkNGU9")],
         [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
     ]
     reply_markup = InlineKeyboardMarkup(btn)
