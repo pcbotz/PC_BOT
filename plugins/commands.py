@@ -1561,13 +1561,16 @@ async def check_plans_cmd(client, message):
         expiry_time = remaining_time + datetime.datetime.now()
         await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
     else:
-        btn = [ 
-            [InlineKeyboardButton("ɢᴇᴛ ғʀᴇᴇ ᴛʀᴀɪʟ ғᴏʀ 𝟻 ᴍɪɴᴜᴛᴇꜱ ☺️", callback_data="get_trail")],
-            [InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="buy_premium")],
+        btn = [            
+            [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟏", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES")],
+            [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟐", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_02")],
+            [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟑", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03")],
+            [InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏 𝟎𝟒", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_04")],
             [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         m=await message.reply_sticker("CAACAgIAAxkBAAIBTGVjQbHuhOiboQsDm35brLGyLQ28AAJ-GgACglXYSXgCrotQHjibHgQ")         
-        await message.reply_text(f"**😢 You Don't Have Any Premium Subscription.\n\n Check Out Our Premium /plan**",reply_markup=reply_markup)
+        await message.reply_text(f"**👉 𝗟𝗔𝗧𝗘𝗦𝗧 𝗠𝗔𝗟𝗔𝗬𝗔𝗟𝗔𝗠 𝗧𝗔𝗠𝗜𝗟 𝗘𝗡𝗚𝗟𝗜𝗦𝗛 𝗧𝗘𝗟𝗨𝗚𝗨 𝗞𝗔𝗡𝗡𝗔𝗗𝗔 𝗛𝗜𝗡𝗗𝗜 𝗠𝗢𝗩𝗜𝗘𝗦 ✌️\n\nപുതിയതും പഴയതുമായ എല്ലാ മൂവിയും ലഭിക്കാൻ തഴെ ഉള്ള ലിങ്കിൽ കയറി സ്പെല്ലിംങ്ങ് തെറ്റാതെ മെസ്സേജ് അയക്കുക..!!!\n\n🔰 𝗚𝗥𝗢𝗨𝗣  𝗝 𝗢 𝗜 𝗡 ❤️ 𝗡 𝗢 𝗪 .🔥  𝗟𝗜𝗡𝗞  👇**",reply_markup=reply_markup)
+        reply_markup=reply_markup)
         await asyncio.sleep(2)
         await m.delete()
