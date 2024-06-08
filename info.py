@@ -105,8 +105,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://pcbackkkkknew-new.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://pcbackkkkknew-new.onrender.com/".format(FQDN, PORT)
+URL = "https://pcautofilterbot-1500897d5898.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://pcautofilterbot-1500897d5898.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://pcbackkkkknew-new.onrender.com/".format(FQDN)
+    URL = "https://pcautofilterbot-1500897d5898.herokuapp.com/".format(FQDN)
 else:
-    URL = "https://pcbackkkkknew-new.onrender.com/".format(FQDN)
+    URL = "https://pcautofilterbot-1500897d5898.herokuapp.com/".format(FQDN)
 
 
 
@@ -138,6 +138,3 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
